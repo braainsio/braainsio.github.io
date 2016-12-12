@@ -6,21 +6,6 @@ function printStackTrace(t) {
     return o
 }
 
-function shareOnFB() {
-    FB.ui({
-        method: "feed",
-        link: "http://www.braains.io",
-        picture: "https://i.redd.it/rv6qyefuj0tx.png",
-        name: "braains.io - Survive the zombie attack!!",
-        caption: "braains.io",
-        description: "braains.io is the best html5 zombie game out there!"
-    }, function(t) {
-        var e = JSON.stringify(t),
-            i = JSON.parse(e);
-        i.post_id != "" && ($.cookie("fb-shared", !0), $(".btn-buy-skin").removeClass("disabled"))
-    })
-}
-
 function prerollComplete() {
     gameStarted || (console.log("ad completed. starting game"), pathArray = window.location.href.split("/"), host = pathArray[2], host == "localhost" ? ige.client.connectToLocalhost() : ige.client.startGame(), gameStarted = !0), isShoppingTime && $("#shopping-modal").modal("show"), ige.client.adsDue = !1, adIsPlaying = !1
 }

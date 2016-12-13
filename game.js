@@ -6290,7 +6290,7 @@ var PlayerComponent = $i_60.extend({
             up: !1,
             down: !1,
             mouseButton1: !1
-        }, this._facingAngle = 0, this._speedBonus = 4, ige.input.mapAction("mouseButton1", ige.input.mouse.button1), ige.input.mapAction("a", ige.input.key.a), ige.input.mapAction("d", ige.input.key.d), ige.input.mapAction("w", ige.input.key.w), ige.input.mapAction("s", ige.input.key.s), ige.input.mapAction("left", ige.input.key.left), ige.input.mapAction("right", ige.input.key.right), ige.input.mapAction("up", ige.input.key.up), ige.input.mapAction("down", ige.input.key.down), ige.input.mapAction("enter", ige.input.key.enter), this._entity.addBehaviour("playerComponent_behaviour", this._behaviour)
+        }, this._facingAngle = 0, this._speedBonus = 1, ige.input.mapAction("mouseButton1", ige.input.mouse.button1), ige.input.mapAction("a", ige.input.key.a), ige.input.mapAction("d", ige.input.key.d), ige.input.mapAction("w", ige.input.key.w), ige.input.mapAction("s", ige.input.key.s), ige.input.mapAction("left", ige.input.key.left), ige.input.mapAction("right", ige.input.key.right), ige.input.mapAction("up", ige.input.key.up), ige.input.mapAction("down", ige.input.key.down), ige.input.mapAction("enter", ige.input.key.enter), this._entity.addBehaviour("playerComponent_behaviour", this._behaviour)
     },
     _behaviour: function() {
         if (ige.isClient) {
